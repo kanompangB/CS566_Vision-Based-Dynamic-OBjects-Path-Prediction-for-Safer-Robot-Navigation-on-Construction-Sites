@@ -21,7 +21,7 @@ Construction sites are inherently dynamic and hazardous environments. For autono
 To ensure the authenticity of our data, we deployed a mobile robotic platform on an active construction site at the **University of Wisconsin-Madison (Kellner Family Athletic Center)** as shown below.
 
 ![Figure 1: Site Layout](./images/layout.png)
-*> Figure 1. Layout of the construction site, photographed on May 21, 2025.*
+*> Layout of the construction site, photographed on May 21, 2025.*
 
 ### Robotic Platform
 We selected the **Unitree B2 Commercial Quadruped Robot** for this task.
