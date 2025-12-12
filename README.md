@@ -34,7 +34,7 @@ Instead of static recording, we employed a **Randomized Waypoint Navigation** st
 2.  Routes included diverse zones such as **material storage areas** and **active machinery routes**.
 3.  This ensured the dataset captured the unpredictable nature of real-world construction workflows.
 
-![Unitree B2 Robot and ZED Camera Setup](./images/images/robot.png)
+![Unitree B2 Robot and ZED Camera Setup](./images/robot.png)
 *> The Unitree B2 robot equipped with the ZED 2i camera used for field data collection.*
 
 ---
