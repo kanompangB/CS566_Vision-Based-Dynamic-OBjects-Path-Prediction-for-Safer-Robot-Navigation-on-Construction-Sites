@@ -83,11 +83,11 @@ The trained model was deployed on a hold-out test set, and predictions were proj
 
 ### 🎥 Video Demos: Real-time Prediction Performance
 
-| **Demo 1: Single Worker Tracking** | **Demo 2: Continuous Tracking** |
+| **Scenario 1: Rear Approach & Departure**<br>*(Worker enters from behind)* | **Scenario 2: Frontal Approach & Departure**<br>*(Worker enters from front)* |
 | :---: | :---: |
-| [![Demo 1](https://img.youtube.com/vi/vOPF1eJW_yY/mqdefault.jpg)](https://www.youtube.com/watch?v=vOPF1eJW_yY) | [![Demo 2](https://img.youtube.com/vi/WSjSNHRLcyw/mqdefault.jpg)](https://www.youtube.com/watch?v=WSjSNHRLcyw) |
-| **Demo 3: Handling Occlusion** | **Demo 4: Loader & Truck Interaction** |
-| [![Demo 3](https://img.youtube.com/vi/u8KJ_lNhGX8/mqdefault.jpg)](https://www.youtube.com/watch?v=u8KJ_lNhGX8) | [![Demo 4](https://img.youtube.com/vi/Yiv0hxnbGa4/mqdefault.jpg)](https://www.youtube.com/watch?v=Yiv0hxnbGa4) |
+| [![Rear Approach](https://img.youtube.com/vi/vOPF1eJW_yY/mqdefault.jpg)](https://www.youtube.com/watch?v=vOPF1eJW_yY) | [![Frontal Approach](https://img.youtube.com/vi/WSjSNHRLcyw/mqdefault.jpg)](https://www.youtube.com/watch?v=WSjSNHRLcyw) |
+| **Scenario 3: Stop-and-Go Motion**<br>*(Worker stops then resumes walking)* | **Scenario 4: Complex Site Environment**<br>*(Workers, Concrete Mixer & Tower Crane)* |
+| [![Stop and Go](https://img.youtube.com/vi/u8KJ_lNhGX8/mqdefault.jpg)](https://www.youtube.com/watch?v=u8KJ_lNhGX8) | [![Complex Scene](https://img.youtube.com/vi/Yiv0hxnbGa4/mqdefault.jpg)](https://www.youtube.com/watch?v=Yiv0hxnbGa4) |
 
 ---
 
