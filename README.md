@@ -34,7 +34,7 @@ Instead of static recording, we employed a **Randomized Waypoint Navigation** st
 2.  Routes included diverse zones such as **material storage areas** and **active machinery routes**.
 3.  This ensured the dataset captured the unpredictable nature of real-world construction workflows.
 
-![Figure: Unitree B2 Robot and ZED Camera Setup](PLACEHOLDER_FOR_ROBOT_IMAGE)
+![Unitree B2 Robot and ZED Camera Setup](./robot.png)
 *> The Unitree B2 robot equipped with the ZED 2i camera used for field data collection.*
 
 ---
@@ -58,11 +58,9 @@ To handle the noisy environment of a construction site, we implemented a robust 
 The pipeline processes the video frames to generate a supervised learning dataset $\mathcal{D}$:
 1.  **Centroid Calculation:** For each tracked object $i$, the bounding box centroid $(u, v)$ is computed.
 2.  **Sequence Aggregation:** Coordinates are aggregated by unique IDs.
-3.  **Data Splitting:** Each trajectory is partitioned into:
-    * **Observation ($X$):** Past coordinates (History).
-    * **Ground Truth ($Y$):** Future coordinates (Prediction Target).
+3.  **Data Splitting:** Each trajectory is partitioned into **Observation ($X$)** (History) and **Ground Truth ($Y$)** (Prediction Target).
 
-![Figure: Data Processing Logic Flow](PLACEHOLDER_FOR_PIPELINE_DIAGRAM)
+![Data Processing Logic Flow](./Algorithm.png)
 *> Algorithm logic flow for generating trajectory datasets from raw video inputs.*
 
 ---
@@ -75,12 +73,9 @@ The primary outcome of this project is a verified end-to-end pipeline and a base
 The trained model was deployed on a hold-out test set, and predictions were projected onto a 2D map:
 
 * **Plausible Path Planning:** As shown in the visualization below, the system successfully generates future path plans (colored lines) extending from the agents.
-* **Constraint Learning:** The model demonstrates an understanding of the site's physical constraints. Predicted paths generally:
-    * Adhere to navigable open spaces.
-    * Avoid static obstacles (e.g., concrete barriers, pillars).
-    * Follow the natural flow of movement observed during training.
+* **Constraint Learning:** The model demonstrates an understanding of the site's physical constraints. Predicted paths generally adhere to navigable open spaces, avoid static obstacles, and follow the natural flow of movement.
 
-![Figure: Bird's Eye View Results](PLACEHOLDER_FOR_BEV_IMAGE)
+![Bird's Eye View Results](./tracjectory_example1.png)
 *> BEV reconstruction showing the model's predicted paths (colored lines) for workers and machinery, respecting site boundaries.*
 
 ---
