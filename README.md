@@ -73,10 +73,17 @@ The primary outcome of this project is a verified end-to-end pipeline and a base
 The trained model was deployed on a hold-out test set, and predictions were projected onto a 2D map:
 
 * **Plausible Path Planning:** As shown in the visualization below, the system successfully generates future path plans (colored lines) extending from the agents.
-* **Constraint Learning:** The model demonstrates an understanding of the site's physical constraints. Predicted paths generally adhere to navigable open spaces, avoid static obstacles, and follow the natural flow of movement.
+* **Constraint Learning:** The model demonstrates an understanding of the site's physical constraints. Predicted paths generally adhere to navigable open spaces.
 
-![Bird's Eye View Results](./images/tracjectory_example1.png)
-*> BEV reconstruction showing the model's predicted paths (colored lines) for workers and machinery, respecting site boundaries.*
+![Bird's Eye View Results](./tracjectory_example1.png)
+*> BEV reconstruction showing the model's predicted paths (colored lines).*
+
+### 🎥 Video Demos
+Below are raw recordings from the pipeline showing real-time tracking:
+
+1.  **Single Worker Tracking:** [▶️ Watch Demo 1](./demos/demo1-worker.mp4)
+2.  **Continuous Tracking:** [▶️ Watch Demo 2](./demos/demo2-worker.mp4)
+3.  **Complex Scenario (Workers & Vehicles):** [▶️ Watch Demo 4](./demos/demo4-workers%20and%20vehicles.mp4)
 
 ---
 
